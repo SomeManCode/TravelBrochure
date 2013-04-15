@@ -1,0 +1,6 @@
+link to new destination path
+
+goes n index.html.erb
+
+
+<%= link_to 'New Comic', new_comic_path %>
