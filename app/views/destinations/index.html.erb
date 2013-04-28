@@ -1,15 +1,15 @@
 <h1>Listing Destinations</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-  </tr>
+<%= link_to 'New Destination', new_destination_path %>
 
 <% @destinations.each do |destination| %>
   <tr>
-    <td><%= destination.image_url %></td>
+    <br>
+    <br>
+    <br>
     <td><%= destination.name %></td>
+    <br>
+    <td><%= link_to (image_tag destination.image_url, :width => 300) %></td>
+
     <td><%= link_to 'Show', destination %></td>
     <td><%= link_to 'Edit', edit_destination_path(destination) %></td>
     <td><%= link_to 'Destroy', destination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -18,5 +18,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New Destination', new_destination_path %>

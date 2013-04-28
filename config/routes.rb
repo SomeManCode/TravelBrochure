@@ -2,7 +2,7 @@ TravelApp::Application.routes.draw do
   resources :attractions
 
 
-  resources :destinations
+  resources :destinations 
 
 
   # The priority is based upon order of creation:
